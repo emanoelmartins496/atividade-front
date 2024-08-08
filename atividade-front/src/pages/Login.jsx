@@ -1,5 +1,6 @@
 import { Button } from "react-bootstrap"
 import { useForm } from "react-hook-form"
+import logo from "../../public/img/logo.png"
 // import toast from "react-hot-toast"
 // import { Link, useNavigate } from "react-router-dom"
 
@@ -14,8 +15,12 @@ function Login() {
 
   return (
     <main>
-      <form className="form-section mt-5">
-        <h1>Login</h1>
+      <form className="form-section">
+      <img src={logo} alt="Logo" />
+        <h3>
+          Seja bem vindo (a)!
+        </h3>
+        <p>Use seu e-mail e senha para ter acesso às aulas.</p>
         <div>
           <label htmlFor="email">Email</label>
           <input
@@ -46,11 +51,7 @@ function Login() {
         <Button variant="dark" className="mt-2 mb-2 w-100" type="submit">
           Entrar
         </Button>
-        <Button
-          variant="primary"
-          className="mb-3 w-100"
-          type="button"
-        >
+        <Button variant="primary" className="mb-3 w-100" type="button">
           Entrar com o google
         </Button>
       </form>
