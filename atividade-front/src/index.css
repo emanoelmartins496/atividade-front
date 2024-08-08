@@ -1,1 +1,36 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
+
+.form-section {
+  width: 400px;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 16px auto;
+}
+
+.form-section h1 {
+  margin-bottom: 1.5rem;
+  color: #152929;
+}
+
+.form-section label {
+  font-weight: bold;
+  color: #152929;
+}
+
+.form-section .form-control {
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #6e96af;
+  border-radius: 12px;
+}
+
+.form-section .invalid {
+  color: red;
+  font-size: 0.875rem;
+}
+
+.form-section .btn {
+  transition: background-color 0.3s ease;
+  border-radius: 12px;
+}
