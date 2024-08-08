@@ -1,5 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Header from "./components/Header"
+import Home from "./pages/Home"
+import Alunos from "./pages/Alunos"
+import Cursos from "./pages/Cursos"
+import EditarAluno from "./pages/EditarAluno"
+import EditarCurso from "./pages/EditarCurso"
+import NovoAluno from "./pages/NovoAluno"
+import NovoCurso from "./pages/NovoCurso"
 
 function App() {
   return (
