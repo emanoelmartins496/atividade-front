@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form"
 import { useNavigate, useParams } from "react-router-dom"
 import toast from "react-hot-toast"
 import { useEffect } from "react"
-import { getAluno, updateAluno } from "../api/clientes"
+import { getAluno, updateAluno } from "../api/alunos"
 
 function EditarAluno() {
   const {

@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form"
 import { useNavigate, useParams } from "react-router-dom"
 import toast from "react-hot-toast"
 import { useEffect } from "react"
-import { getCurso, updateCurso } from "../api/clientes"
+import { getCurso, updateCurso } from "../api/cursos"
 
 function EditarCurso() {
   const {
