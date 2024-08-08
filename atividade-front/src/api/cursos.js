@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export async function getCursos() {
+export async function getCurso() {
     const response = await axios.get("http://localhost:3000/cursos");
     return response.data;
 }
