@@ -22,10 +22,11 @@ function Login() {
         </h3>
         <p>Use seu e-mail e senha para ter acesso às aulas.</p>
         <div>
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email"></label>
           <input
             type="email"
             id="email"
+            placeholder="E-mail"
             className="form-control"
             {...register("email", { required: "O email é obrigatório" })}
           />
@@ -34,10 +35,11 @@ function Login() {
           )}
         </div>
         <div>
-          <label htmlFor="senha">Senha</label>
+          <label htmlFor="senha" className="mt-4"></label>
           <input
             type="password"
             id="senha"
+            placeholder="Senha"
             className="form-control"
             {...register("senha", {
               required: "A senha é obrigatória",

@@ -1,7 +1,7 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 .form-section {
-  width: 400px;
+  width: 500px;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -10,7 +10,7 @@
 }
 
 .form-section img {
-  width: 100px;
+  width: 120px;
 }
 
 .form-section h3 {

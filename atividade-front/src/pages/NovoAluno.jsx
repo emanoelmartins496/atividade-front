@@ -28,19 +28,7 @@ function NovoAluno() {
     <main className="mt-4 container">
       <h1>Novo Aluno</h1>
       <hr />
-      <form onSubmit={handleSubmit(salvarAluno)}>
-        <div>
-          <label htmlFor="matricula">Matrícula</label>
-          <input
-            type="text"
-            id="matricula"
-            className="form-control"
-            {...register("matricula", { required: true, maxLength: 50 })}
-          />
-          {errors.matricula && (
-            <small className="text-danger">A matrícula é inválida!</small>
-          )}
-        </div>
+      <form className="form-control" onSubmit={handleSubmit(salvarAluno)}>
         <div>
           <label htmlFor="nome">Nome</label>
           <input
