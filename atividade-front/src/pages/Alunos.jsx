@@ -32,8 +32,8 @@ function Alunos() {
 
   return (
     <main className="mt-4 container">
-      <h1>ALunos</h1>
-       <Button as={Link} to="/Aluno/novo">
+      <h1>Alunos</h1>
+       <Button as={Link} to="/alunos/novo">
         Adicionar Aluno
       </Button>
       <hr />
