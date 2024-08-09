@@ -1,12 +1,10 @@
-import React from "react"
 import { Container, Row, Col, Form, Button } from "react-bootstrap"
-import "./Contato.css" // Importe o CSS personalizado
+import "./Contato.css" 
 
 function Contato() {
   return (
     <Container fluid className="py-5" style={{ backgroundColor: "#f8f9fa" }}>
       <Container>
-        {/* Título da seção */}
         <Row className="mb-4">
           <Col>
             <h1
@@ -21,8 +19,6 @@ function Contato() {
             </p>
           </Col>
         </Row>
-
-        {/* Formulário de Contato */}
         <Row className="mb-5">
           <Col md={6}>
             <Form>
@@ -56,7 +52,6 @@ function Contato() {
             </Form>
           </Col>
 
-          {/* Informações de Contato */}
           <Col md={6} className="d-flex flex-column justify-content-center">
             <div>
               <h5 style={{ color: "#1E90FF" }}>Endereço</h5>
@@ -74,8 +69,6 @@ function Contato() {
             </div>
           </Col>
         </Row>
-
-        {/* Mapa de Localização */}
         <Row className="text-center">
           <Col>
             <h5 style={{ color: "#1E90FF" }}>Nossa Localização</h5>
