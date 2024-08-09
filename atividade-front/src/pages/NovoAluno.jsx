@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form"
 import { useNavigate } from "react-router-dom"
 import { addAluno } from "../api/alunos"
 import toast from "react-hot-toast"
+import logo from "../../public/img/logo.png"
 
 function NovoAluno() {
   const {
@@ -26,14 +27,17 @@ function NovoAluno() {
 
   return (
     <main className="mt-4 container">
-      <h1>Novo Aluno</h1>
-      <hr />
-      <form className="form-control" onSubmit={handleSubmit(salvarAluno)}>
+      <form className="form-section" onSubmit={handleSubmit(salvarAluno)}>
+        <img src={logo} alt="Logo" />
+        <h3>Seja bem vindo (a)!</h3>
+        <p>Cadastre-se para ter acesso.</p>
+        <div></div>
         <div>
-          <label htmlFor="nome">Nome</label>
+          <label htmlFor="nome"></label>
           <input
             type="text"
             id="nome"
+            placeholder="Nome"
             className="form-control"
             {...register("nome", { required: true, maxLength: 200 })}
           />
@@ -42,10 +46,11 @@ function NovoAluno() {
           )}
         </div>
         <div>
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email"></label>
           <input
             type="email"
             id="email"
+            placeholder="Email"
             className="form-control"
             {...register("email", { required: true, maxLength: 200 })}
           />
@@ -54,10 +59,11 @@ function NovoAluno() {
           )}
         </div>
         <div>
-          <label htmlFor="telefone">Telefone</label>
+          <label htmlFor="telefone"></label>
           <input
             type="tel"
             id="telefone"
+            placeholder="Telefone"
             className="form-control"
             {...register("telefone", { required: true, maxLength: 15 })}
           />
@@ -66,10 +72,11 @@ function NovoAluno() {
           )}
         </div>
         <div>
-          <label htmlFor="senha">Senha</label>
+          <label htmlFor="senha"></label>
           <input
             type="password"
             id="senha"
+            placeholder="Senha"
             className="form-control"
             {...register("senha", { required: true, minLength: 6 })}
           />
@@ -78,10 +85,11 @@ function NovoAluno() {
           )}
         </div>
         <div>
-          <label htmlFor="cidade">Cidade</label>
+          <label htmlFor="cidade"></label>
           <input
             type="text"
             id="cidade"
+            placeholder="Cidade"
             className="form-control"
             {...register("endereco.cidade", { required: true, maxLength: 200 })}
           />
@@ -90,10 +98,11 @@ function NovoAluno() {
           )}
         </div>
         <div>
-          <label htmlFor="uf">UF</label>
+          <label htmlFor="uf"></label>
           <input
             type="text"
             id="uf"
+            placeholder="UF"
             className="form-control"
             {...register("endereco.uf", { required: true, maxLength: 2 })}
           />
@@ -102,10 +111,11 @@ function NovoAluno() {
           )}
         </div>
         <div>
-          <label htmlFor="cep">CEP</label>
+          <label htmlFor="cep"></label>
           <input
             type="text"
             id="cep"
+            placeholder="CEP"
             className="form-control"
             {...register("endereco.cep", { required: true, maxLength: 8 })}
           />
@@ -114,10 +124,11 @@ function NovoAluno() {
           )}
         </div>
         <div>
-          <label htmlFor="rua">Rua</label>
+          <label htmlFor="rua"></label>
           <input
             type="text"
             id="rua"
+            placeholder="Rua"
             className="form-control"
             {...register("endereco.rua", { required: true })}
           />
@@ -126,10 +137,11 @@ function NovoAluno() {
           )}
         </div>
         <div>
-          <label htmlFor="numero">Número</label>
+          <label htmlFor="numero"></label>
           <input
             type="text"
             id="numero"
+            placeholder="Número"
             className="form-control"
             {...register("endereco.numero", { required: true })}
           />
