@@ -90,10 +90,13 @@ body {
 }
 
 .custom-width {
-  max-width: 500px; /* Ajuste a largura máxima conforme necessário */
-  margin: 0 auto; /* Centraliza o texto horizontalmente */
+  max-width: 500px;
+  margin: 0 auto;
 }
 
+.link-cadastro {
+  color: #152929;
+}
 
 @media (max-width: 480px) {
   .form-section {

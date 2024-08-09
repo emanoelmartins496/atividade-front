@@ -2,7 +2,7 @@ import { Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import logo from "../../public/img/logo.png";
 import { login } from "../api/login";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
 
 function Login() {
@@ -60,9 +60,15 @@ function Login() {
         <Button variant="primary" className="mb-3 w-100" type="button">
           Entrar com o Google
         </Button>
+        <div className="link-cadastro">
+          <p>Não tem uma conta?</p>
+          <Link className="btn btn-dark" to="/alunos/novo">
+            Cadastre-se
+          </Link>
+        </div>
       </form>
     </main>
-  );
+  )
 }
 
 export default Login;
