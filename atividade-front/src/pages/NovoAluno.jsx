@@ -16,9 +16,9 @@ function NovoAluno() {
 
   function salvarAluno(data) {
     addAluno(data)
-      .then((resposta) => {
-        toast.success(resposta.message)
-        navigate("/clientes")
+      .then(() => {
+        toast.success("Conta criada com sucesso!")
+        navigate("/login")
       })
       .catch((err) => {
         toast.error(err.response.data.message)
@@ -31,7 +31,19 @@ function NovoAluno() {
         <img src={logo} alt="Logo" />
         <h3>Seja bem vindo (a)!</h3>
         <p>Cadastre-se para ter acesso.</p>
-        <div></div>
+        <div>
+          <label htmlFor="matricula"></label>
+          <input
+            type="text"
+            id="matricula"
+            placeholder="Matrícula"
+            className="form-control"
+            {...register("matricula", { required: true, maxLength: 50 })}
+          />
+          {errors.matricula && (
+            <small className="text-danger">A matrícula é inválida!</small>
+          )}
+        </div>
         <div>
           <label htmlFor="nome"></label>
           <input
