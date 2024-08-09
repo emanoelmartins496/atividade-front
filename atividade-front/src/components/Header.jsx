@@ -35,7 +35,7 @@ function Header() {
               Política de privacidade
             </Nav.Link>
             <NavDropdown
-              title="Portal do aluno"
+              title="Portal"
               id="basic-nav-dropdown"
               onToggle={handleToggle}
               className={isDropdownOpen ? "rotate-arrow" : ""}
@@ -53,6 +53,13 @@ function Header() {
                 style={{ color: "#0091FF", fontWeight: "bold" }}
               >
                 Cadastro
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                as={Link}
+                to="/alunos"
+                style={{ color: "#0091FF", fontWeight: "bold" }}
+              >
+                Admin
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link as={Link} to="/contato" style={{ color: "#0091FF" }}>
