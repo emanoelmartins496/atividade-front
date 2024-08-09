@@ -1,7 +1,6 @@
 import { useState } from "react"
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap"
 import { Link } from "react-router-dom"
-import logo from "../../public/img/logo.png"
 
 function Header() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
@@ -23,16 +22,6 @@ function Header() {
           <Nav style={{ marginLeft: "auto" }} className="ml-auto">
             <Nav.Link as={Link} to="/cursos" style={{ color: "#0091FF" }}>
               Cursos
-            </Nav.Link>
-            <Nav.Link as={Link} to="/sobre" style={{ color: "#0091FF" }}>
-              Sobre
-            </Nav.Link>
-            <Nav.Link
-              as={Link}
-              to="/politica-de-privacidade"
-              style={{ color: "#0091FF" }}
-            >
-              Política de privacidade
             </Nav.Link>
             <NavDropdown
               title="Portal"
@@ -57,6 +46,9 @@ function Header() {
             </NavDropdown>
             <Nav.Link as={Link} to="/contato" style={{ color: "#0091FF" }}>
               Contato
+            </Nav.Link>
+            <Nav.Link as={Link} to="/sobre" style={{ color: "#0091FF" }}>
+              Sobre
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

@@ -1,46 +1,45 @@
-.course-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 10px;
-    padding: 30px;
-  }
-  
-  .course-card {
-    width: 300px;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .course-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  .course-card img {
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .course-button {
-    background-color: #0091FF;
-    border: none;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s;
-  }
-  
-  .course-button:hover {
-    background-color: #007ACC;
-    transform: translateY(-2px);
-  }
-  
-  .course-button:active {
-    background-color: #005C99;
-    transform: translateY(0);
-  }
-  
+.container-cursos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 100px;
+  padding: 30px;
+}
+
+.cartao-curso {
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cartao-curso:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cartao-curso img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.botao-curso {
+  background-color: #0091FF;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.botao-curso:hover {
+  background-color: #007ACC;
+  transform: translateY(-2px);
+}
+
+.botao-curso:active {
+  background-color: #005C99;
+  transform: translateY(0);
+}

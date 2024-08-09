@@ -31,9 +31,6 @@ function Cursos() {
   return (
     <main className="mt-4 container">
       <h1>Cursos</h1>
-      <Button as={Link} to="/cursos/novo">
-        Adicionar Curso
-      </Button>
       <hr />
       {cursos ? (
         <Table>
@@ -41,7 +38,6 @@ function Cursos() {
             <tr>
               <th>Tipo de Curso</th>
               <th>Módulo</th>
-              <th>Ações</th>
             </tr>
           </thead>
           <tbody>
@@ -49,22 +45,6 @@ function Cursos() {
               <tr key={curso.id}>
                 <td>{curso.tiposDeCursos}</td>
                 <td>{curso.modulo}</td>
-                <td>
-                  <Button
-                    variant="danger"
-                    size="sm"
-                    onClick={() => deletarCurso(curso.id)}
-                  >
-                    Excluir
-                  </Button>
-                  <Button
-                    size="sm"
-                    as={Link}
-                    to={`/cursos/editar/${curso.id}`}
-                  >
-                    Editar
-                  </Button>
-                </td>
               </tr>
             ))}
           </tbody>

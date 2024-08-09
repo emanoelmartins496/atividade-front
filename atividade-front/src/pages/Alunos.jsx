@@ -55,7 +55,7 @@ function Alunos() {
                   <td>{alunos.email}</td>
                   <td>{alunos.telefone}</td>
                   <td>
-                    <Button variant="danger" size="sm" onClick={() => deletarAluno(alunos.id)}>
+                    <Button variant="danger" size="sm" onClick={() => deletarAluno(alunos.id)} className="me-3">
                       Excluir
                     </Button>
                     <Button size="sm" as={Link} to={`/alunos/editar/${alunos.id}`}>
