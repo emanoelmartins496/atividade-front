@@ -24,7 +24,7 @@ function Login() {
       <form className="form-section" onSubmit={handleSubmit(onSubmit)}>
         <img src={logo} alt="Logo" />
         <h3>Seja bem vindo (a)!</h3>
-        <p>Use seu e-mail e senha para ter acesso às aulas.</p>
+        <p className="p-login">Use seu e-mail e senha para ter acesso às aulas.</p>
         <div>
           <label htmlFor="email"></label>
           <input

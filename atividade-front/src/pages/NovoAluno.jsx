@@ -30,7 +30,7 @@ function NovoAluno() {
       <form className="form-section" onSubmit={handleSubmit(salvarAluno)}>
         <img src={logo} alt="Logo" />
         <h3>Seja bem vindo (a)!</h3>
-        <p>Cadastre-se para ter acesso.</p>
+        <p className="p-login">Cadastre-se para ter acesso.</p>
         <div>
           <label htmlFor="matricula"></label>
           <input

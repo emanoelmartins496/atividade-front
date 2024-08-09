@@ -107,6 +107,9 @@ main {
   min-height: 80vh;
 }
 
+.p-login {
+  color: #152929;
+}
 @media (max-width: 480px) {
   .form-section {
     width: 90%;
