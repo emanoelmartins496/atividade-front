@@ -14,7 +14,7 @@ function Header() {
     <Navbar expand="lg" bg="dark" variant="dark">
       <Container>
         <Navbar.Brand as={Link} to="/">
-          <img src={logo} alt="Logo" width={150}/>
+          <img src="/img/logonav.png" alt="Logo" width={150}/>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -46,13 +46,6 @@ function Header() {
                 style={{ color: "#0091FF", fontWeight: "bold" }}
               >
                 Login
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                as={Link}
-                to="/alunos/novo"
-                style={{ color: "#0091FF", fontWeight: "bold" }}
-              >
-                Cadastro
               </NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}
