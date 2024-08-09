@@ -8,6 +8,7 @@ import EditarCurso from "./pages/EditarCurso"
 import NovoAluno from "./pages/NovoAluno"
 import NovoCurso from "./pages/NovoCurso"
 import Login from "./pages/Login"
+import AlunoCursos from "./pages/AlunosCursos"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/alunos" element={<Alunos />} />
+          <Route path="/alunos/cursos" element={< AlunoCursos/>} />
           <Route path="/alunos/novo" element={<NovoAluno />} />
           <Route path="/alunos/editar/:id" element={<EditarAluno />} />
           <Route path="/cursos" element={<Cursos />} />

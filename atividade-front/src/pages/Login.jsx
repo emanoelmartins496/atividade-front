@@ -1,25 +1,29 @@
-import { Button } from "react-bootstrap"
-import { useForm } from "react-hook-form"
-import logo from "../../public/img/logo.png"
-// import toast from "react-hot-toast"
-// import { Link, useNavigate } from "react-router-dom"
+import { Button } from "react-bootstrap";
+import { useForm } from "react-hook-form";
+import logo from "../../public/img/logo.png";
+import { login } from "../api/login";
+import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 
 function Login() {
-  const {
-    register,
-    // handleSubmit,
-    formState: { errors },
-  } = useForm()
+  const { register, handleSubmit, formState: { errors } } = useForm();
+  const navigate = useNavigate(); 
 
-  // const navigate = useNavigate()
+  const onSubmit = async (data) => {
+    try {
+      await login(data); 
+      toast.success("Login realizado com sucesso!"); 
+      navigate("/alunos/cursos"); 
+    } catch (error) {
+      toast.error("Falha no login. Verifique suas credenciais."); 
+    }
+  };
 
   return (
     <main>
-      <form className="form-section">
-      <img src={logo} alt="Logo" />
-        <h3>
-          Seja bem vindo (a)!
-        </h3>
+      <form className="form-section" onSubmit={handleSubmit(onSubmit)}>
+        <img src={logo} alt="Logo" />
+        <h3>Seja bem vindo (a)!</h3>
         <p>Use seu e-mail e senha para ter acesso às aulas.</p>
         <div>
           <label htmlFor="email"></label>
@@ -54,11 +58,11 @@ function Login() {
           Entrar
         </Button>
         <Button variant="primary" className="mb-3 w-100" type="button">
-          Entrar com o google
+          Entrar com o Google
         </Button>
       </form>
     </main>
-  )
+  );
 }
 
-export default Login
+export default Login;
