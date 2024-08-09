@@ -4,8 +4,10 @@
 
 Este projeto foi desenvolvido como parte das atividades do bootcamp FullStack (React+Node) da SoulCode. O objetivo é integrar um backend robusto utilizando Node.js, Express e MySQL com um frontend moderno e responsivo feito em React, estilizado com Bootstrap. A aplicação simula uma plataforma de educação online, intitulada **DevNation Academy**, dedicada a capacitar indivíduos com habilidades de programação de ponta, preparando-os para o mercado de tecnologia em constante evolução.
 
-![Interface do Projeto Devnation Desktop](https://github.com/emanoelmartins496/atividade-front/blob/main/atividade-front/public/img/devnation-desktop.png)
-![Interface do Projeto Devnation Mobile](https://github.com/emanoelmartins496/atividade-front/blob/main/atividade-front/public/img/devnation-mobile.png)
+<p align="center">
+  <img src="https://github.com/emanoelmartins496/atividade-front/blob/main/atividade-front/public/img/devnation-desktop.png" alt="Interface do Projeto Devnation Desktop" width="45%">
+  <img src="https://github.com/emanoelmartins496/atividade-front/blob/main/atividade-front/public/img/devnation-mobile.png" alt="Interface do Projeto Devnation Mobile" width="45%">
+</p>
 
 ## Sobre a DevNation Academy
 
