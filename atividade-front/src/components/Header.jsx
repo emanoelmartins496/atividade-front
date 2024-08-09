@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap"
 import { Link } from "react-router-dom"
+import logo from "../../public/img/logo.png"
 
 function Header() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
@@ -13,10 +14,7 @@ function Header() {
     <Navbar expand="lg" bg="dark" variant="dark">
       <Container>
         <Navbar.Brand as={Link} to="/">
-          DevNation{" "}
-          <span className="font-weight-bold" style={{ color: "#0091FF" }}>
-            Academy
-          </span>
+          <img src={logo} alt="Logo" width={150}/>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
