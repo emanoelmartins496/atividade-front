@@ -8,6 +8,8 @@ import EditarCurso from "./pages/EditarCurso"
 import NovoAluno from "./pages/NovoAluno"
 import NovoCurso from "./pages/NovoCurso"
 import Login from "./pages/Login"
+import Sobre from "./pages/Sobre"
+import Contato from "./pages/Contato"
 import AlunoCursos from "./pages/AlunosCursos"
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
           <Route path="/cursos" element={<Cursos />} />
           <Route path="/cursos/novo" element={<NovoCurso />} />
           <Route path="/cursos/editar/:id" element={<EditarCurso />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/contato" element={<Contato />} />
         </Routes>
       </BrowserRouter>
     </>
