@@ -10,6 +10,7 @@ import Login from "./pages/Login"
 import Sobre from "./pages/Sobre"
 import Contato from "./pages/Contato"
 import AlunoCursos from "./pages/AlunosCursos"
+import { Toaster } from "react-hot-toast"
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/alunos" element={<Alunos />} />
-          <Route path="/alunos/cursos" element={< AlunoCursos/>} />
+          <Route path="/alunos/cursos" element={<AlunoCursos />} />
           <Route path="/alunos/novo" element={<NovoAluno />} />
           <Route path="/alunos/editar/:id" element={<EditarAluno />} />
           <Route path="/cursos" element={<Cursos />} />
@@ -29,6 +30,7 @@ function App() {
         </Routes>
         <Rodape />
       </BrowserRouter>
+      <Toaster position="bottom-right" />
     </>
   )
 }

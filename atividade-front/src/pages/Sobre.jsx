@@ -4,23 +4,29 @@ import {
   FaLaptopCode,
   FaCertificate,
 } from "react-icons/fa"
+import logo from "../../public/img/logonav.png"
 
 function Sobre() {
   return (
-    <Container fluid className="py-5" style={{ backgroundColor: "#f8f9fa" }}>
+    <Container fluid className="py-5" style={{ backgroundColor: "#152929" }}>
       <Container>
-        {/* Introdução */}
+        <Row className="mb-4">
+          <Col className="text-center">
+            <img src={logo} alt="Logo" width={300} />
+          </Col>
+        </Row>
         <Row className="mb-4">
           <Col>
             <h1
               className="text-center font-weight-bold"
-              style={{ color: "#0091FF" }}
+              style={{ color: "#fffff" }}
             >
-              Sobre a DevNation Academy
+              Sobre Nós
             </h1>
+            <hr />
             <p
-              className="lead text-center custom-width"
-              style={{ color: "#4B0082" }}
+              className="lead text-center custom-width mb-3"
+              style={{ color: "#0091FF" }}
             >
               A DevNation Academy é dedicada a capacitar indivíduos com
               habilidades de programação de ponta, preparando-os para o mercado
@@ -28,19 +34,16 @@ function Sobre() {
             </p>
           </Col>
         </Row>
-
-        {/* O que nos diferencia */}
         <Row className="mb-5">
           <Col md={4}>
-            <Card className="shadow-sm d-flex flex-column h-100">
+            <Card className="shadow-sm d-flex flex-column h-100 mt-3">
               <Card.Body className="flex-grow-1">
                 <Card.Title
                   className="text-center"
                   style={{ color: "#4B0082" }}
                 >
-                  <FaChalkboardTeacher size={30} className="mb-2" />{" "}
-                  {/* Ícone de Professor */}
-                  Metodologia de Ensino
+                  <FaChalkboardTeacher size={30} className="mb-2" /> Metodologia
+                  de Ensino
                 </Card.Title>
                 <Card.Text>
                   Nossa abordagem prática garante que você aprenda com projetos
@@ -51,15 +54,13 @@ function Sobre() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="shadow-sm d-flex flex-column h-100">
+            <Card className="shadow-sm d-flex flex-column h-100 mt-3">
               <Card.Body className="flex-grow-1">
                 <Card.Title
                   className="text-center"
                   style={{ color: "#4B0082" }}
                 >
-                  <FaLaptopCode size={30} className="mb-2" />{" "}
-                  {/* Ícone de Laptop */}
-                  Cursos Inovadores
+                  <FaLaptopCode size={30} className="mb-2" /> Cursos Inovadores
                 </Card.Title>
                 <Card.Text>
                   Oferecemos uma ampla variedade de cursos que estão sempre
@@ -70,14 +71,13 @@ function Sobre() {
             </Card>
           </Col>
           <Col md={4}>
-            <Card className="shadow-sm d-flex flex-column h-100">
+            <Card className="shadow-sm d-flex flex-column h-100 mt-3">
               <Card.Body className="flex-grow-1">
                 <Card.Title
                   className="text-center"
                   style={{ color: "#4B0082" }}
                 >
-                  <FaCertificate size={30} className="mb-2" />{" "}
-                  {/* Ícone de Certificado */}
+                  <FaCertificate size={30} className="mb-2" />
                   Certificações Reconhecidas
                 </Card.Title>
                 <Card.Text>
@@ -89,35 +89,33 @@ function Sobre() {
             </Card>
           </Col>
         </Row>
-
-        {/* Valores */}
         <Row className="mb-5">
           <Col>
-            <h3 className="text-center" style={{ color: "#1E90FF" }}>
+            <h3 className="text-center" style={{ color: "#fffff" }}>
               Nossos Valores
             </h3>
+            <hr />
             <p
               className="text-center custom-width"
-              style={{ color: "#4B0082" }}
+              style={{ color: "#0091FF" }}
             >
               Excelência, Inovação, Inclusão e Colaboração. Esses são os valores
               que guiam todas as nossas ações e decisões na DevNation Academy.
             </p>
           </Col>
         </Row>
-
-        {/* Depoimentos de Alunos */}
         <Row className="mb-5">
           <Col>
-            <h3 className="text-center" style={{ color: "#1E90FF" }}>
+            <h3 className="text-center" style={{ color: "#ffff" }}>
               Depoimentos de Alunos
             </h3>
+            <hr />
             <Carousel
-              interval={5000} // Intervalo de 5 segundos para a transição automática
-              controls={true} // Adiciona botões de controle
-              indicators={true} // Adiciona indicadores de navegação
-              touch={true} // Permite a navegação por arrastar
-              style={{ maxWidth: "500px", margin: "20px auto 0 auto" }} // Define a largura máxima, centraliza o carrossel e adiciona margem superior
+              interval={4000}
+              controls={true}
+              indicators={true}
+              touch={true}
+              style={{ maxWidth: "500px", margin: "20px auto 0 auto" }}
             >
               <Carousel.Item>
                 <Card className="shadow-sm d-flex flex-column h-100">
@@ -163,21 +161,21 @@ function Sobre() {
             </Carousel>
           </Col>
         </Row>
-
-        {/* Equipe */}
         <Row className="mb-5">
           <Col>
-            <h3 className="text-center" style={{ color: "#1E90FF" }}>
+            <h3 className="text-center" style={{ color: "#ffff" }}>
               Nossa Equipe
             </h3>
-            <p className="text-center" style={{ color: "#4B0082" }}>
+            <hr />
+            <p
+              className="text-center custom-width mb-3"
+              style={{ color: "#0091FF" }}
+            >
               Conheça nossos instrutores e mentores, profissionais experientes
               que estão aqui para ajudar você a alcançar seus objetivos.
             </p>
           </Col>
         </Row>
-
-        {/* Call to Action */}
         <Row className="text-center">
           <Col>
             <Button

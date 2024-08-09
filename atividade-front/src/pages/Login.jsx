@@ -57,9 +57,9 @@ function Login() {
         <Button variant="dark" className="mt-2 mb-2 w-100" type="submit">
           Entrar
         </Button>
-        <Button variant="primary" className="mb-3 w-100" type="button">
+        {/* <Button variant="primary" className="mb-3 w-100" type="button">
           Entrar com o Google
-        </Button>
+        </Button> */}
         <div className="link-cadastro">
           <p>Não tem uma conta?</p>
           <Link className="btn btn-dark" to="/alunos/novo">

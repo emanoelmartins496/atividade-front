@@ -17,14 +17,14 @@ body {
 }
 
 .carousel-indicators [data-bs-target] {
-  background-color: #4B0082; /* Cor dos indicadores */
+  background-color: #4B0082;
 }
 .carousel-indicators .active {
-  background-color: #0091FF; /* Cor do indicador ativo */
+  background-color: #0091FF;
 }
-/* Sobre.css */
+
 .carousel-indicators {
-  bottom: -20px; /* Ajuste este valor conforme necessário */
+  bottom: -20px;
 }
 
 
@@ -62,6 +62,11 @@ body {
   color: black;
 }
 
+label {
+  color: black;
+  margin-top: 10px;
+}
+
 .form-section .form-control {
   margin-bottom: 0.5rem;
   border-radius: 4px;
@@ -96,6 +101,10 @@ body {
 
 .link-cadastro {
   color: #152929;
+}
+
+main {
+  min-height: 80vh;
 }
 
 @media (max-width: 480px) {

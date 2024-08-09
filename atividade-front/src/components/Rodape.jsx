@@ -1,6 +1,6 @@
-import { Container, Row, Col, Nav } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import { FaFacebookF, FaGithub } from "react-icons/fa";
+import { Container, Row, Col, Nav } from "react-bootstrap"
+import { Link } from "react-router-dom"
+import { FaFacebookF, FaGithub } from "react-icons/fa"
 
 function Rodape() {
   return (
@@ -21,23 +21,48 @@ function Rodape() {
           <Col md={4} className="mb-4 text-center">
             <h5 className="mb-3">Redes Sociais</h5>
             <Nav className="d-flex justify-content-center">
-              <Nav.Link href="https://x.com" style={{ color: "#0091FF", fontSize: "24px" }} aria-label="X">
-                <img src="/img/logox.png" alt="LogodoX" style={{ width: "36px", height: "36px" }} />
+              <Nav.Link
+                href="https://x.com"
+                style={{ color: "#0091FF", fontSize: "24px" }}
+                aria-label="X"
+              >
+                <img
+                  src="/img/logox.png"
+                  alt="LogodoX"
+                  style={{ width: "36px", height: "36px" }}
+                />
               </Nav.Link>
-              <Nav.Link href="https://facebook.com" style={{ color: "#0091FF", fontSize: "24px" }} aria-label="Facebook">
+              <Nav.Link
+                href="https://facebook.com"
+                style={{ color: "#0091FF", fontSize: "24px" }}
+                aria-label="Facebook"
+              >
                 <FaFacebookF />
               </Nav.Link>
-              <Nav.Link href="https://github.com" style={{ color: "#0091FF", fontSize: "24px" }} aria-label="GitHub">
+              <Nav.Link
+                href="https://github.com"
+                style={{ color: "#0091FF", fontSize: "24px" }}
+                aria-label="GitHub"
+              >
                 <FaGithub />
               </Nav.Link>
             </Nav>
+          </Col>
+          <Col md={4} className="mb-4 text-md-right text-center">
             <p className="mb-0 mt-3">
-              &copy; {new Date().getFullYear()} Devnation. Todos os direitos reservados.
+              &copy; {new Date().getFullYear()} Devnation Academy. Todos os direitos
+              reservados.
             </p>
-            <Nav.Link 
+            <Nav.Link
               as="button"
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-              style={{ color: "#0091FF", cursor: "pointer", textDecoration: "underline", display: "inline-block", marginTop: "10px" }}
+              style={{
+                color: "#0091FF",
+                cursor: "pointer",
+                textDecoration: "underline",
+                display: "inline-block",
+                marginTop: "10px",
+              }}
             >
               Voltar ao Topo
             </Nav.Link>
@@ -45,7 +70,7 @@ function Rodape() {
         </Row>
       </Container>
     </footer>
-  );
+  )
 }
 
-export default Rodape;
+export default Rodape
